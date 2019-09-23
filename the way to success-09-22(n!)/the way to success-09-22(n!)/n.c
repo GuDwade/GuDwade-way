@@ -27,13 +27,13 @@
 //
 //	return 0;
 //}
-//int main()
-//{
-//	int n = 0;
-//	int i = 0;
-//	int ret = 1;
-//	int sum = 0;
-	/*for(n=1; n<=3; n++)
+int main()
+{
+	int n = 0;
+	int i = 0;
+	int ret = 1;
+	int sum = 0;
+	for(n=1; n<=3; n++)
 	{
 		ret = 1;
 		for(i=1; i<=n; i++)
@@ -45,21 +45,21 @@
 	printf("sum = %d\n", sum);
 
 	return 0;
-}*/
-int main()
-{
-	int n = 0;
-	int m = 0;
-	int i = 0;
-	int ret = 1;
-	int sum = 0;
-	scanf("%d", &m);
-	for (n = 1; n <= m; n++)
-	{
-		ret *= n;
-		sum += ret;
-	}
-	printf("sum = %d\n", sum);
-
-	return 0;
 }
+//int main()
+//{
+//	int n = 0;
+//	int m = 0;
+//	int i = 0;
+//	int ret = 1;
+//	int sum = 0;
+//	scanf("%d", &m);
+//	for (n = 1; n <= m; n++)
+//	{
+//		ret *= n;
+//		sum += ret;
+//	}
+//	printf("sum = %d\n", sum);
+//
+//	return 0;
+//}
