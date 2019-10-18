@@ -42,13 +42,14 @@
 //}
 void Sorted(int *j, int sz)
 {
-	int*p = j;
+	int*p;
 	int tmp;
-	for (p = j; p < p + sz; p++)
+	int* last = j + sz - 1;
+	for (p = j; p < last; p++)
 	{
 		int * x = p;
-		int * t = p + 1;
-		for (t = p + 1; t < t + sz - p; t++)
+		int * t ;
+		for (t = p + 1; t < last; t++)
 		{
 			if ((*t) < (*x))
 			{
@@ -70,7 +71,7 @@ int main()
 		printf("%d\t", *p);
 	}
 	printf("\n");
-	Sorted(p, sz);
+	Sorted(a, sz);/*注意传参*/
 	printf("选择排序为：\n");
 	for (p = a; p < a + sz; p++)
 	{
